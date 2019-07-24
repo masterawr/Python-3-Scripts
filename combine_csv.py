@@ -1,3 +1,4 @@
+# Takes all csv files in a folder and appends all the data into one master csv file.
 import os
 import glob
 import pandas as pd
