@@ -1,3 +1,4 @@
+#This script re-arranges columns in a csv file
 import os
 import glob
 import pandas as pd
