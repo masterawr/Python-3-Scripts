@@ -5,13 +5,16 @@ bc = 0.12
 qc = 0.1498
 sk = 0.11
 nb = 0.15
+
 #Create tax function that takes price and tax_rate as imputs and returns the total price
 def calculate_tax(price, tax_rate):
     total = price + (price * tax_rate)
     total = round(total, 2) #round it to 2 decimal places
     return total
+
 #Explain the program
 print ('This is a Canadian tax calculator.\nEnter in the price of your item and the program will calculate how much it costs with tax.\n')
+
 #Ask user to input province
 province = input("Please select the tax code (i.e. on): \n on - Ontario \n ab - Alberta \n bc - British Columbia \n qc - Quebec \n sk - Saskatchewan \n nb - New Brunswick \n: ")
 if province == 'on':
