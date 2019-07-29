@@ -17,6 +17,6 @@ for k, v in mydict.items():
     print (f'{k:<4} {v}')
     
 #write dictionary to CSV file
-w = csv.writer(open('dictionary.csv', 'w'))
+w = csv.writer(open('dictionary.csv', 'w', newline= '')) #the newline= '' removes spaces
 for key, val in mydict.items():
     w.writerow([key, val])
