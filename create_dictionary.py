@@ -11,12 +11,12 @@ with open('my_file.csv', mode='r') as infile:
     with open('dictionary.csv', mode='w') as outfile:
         writer = csv.writer(outfile)
         mydict = {rows[0]:rows[1] for rows in reader} #mydict is the new dictionary
-
+        print (mydict)
 #print to commnad line in column format
-for k, v in mydict.items():
-    print (f'{k:<4} {v}')
+#for k, v in mydict.items():
+#    print (f'{k:<4} {v}')
     
 #write dictionary to CSV file
-w = csv.writer(open('dictionary.csv', 'w', newline= '')) #the newline= '' removes spaces
-for key, val in mydict.items():
-    w.writerow([key, val])
+#w = csv.writer(open('dictionary.csv', 'w', newline= '')) #the newline= '' removes spaces
+#for key, val in mydict.items():
+#    w.writerow([key, val])
