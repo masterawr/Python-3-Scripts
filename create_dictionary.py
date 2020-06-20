@@ -9,10 +9,10 @@ os.chdir("./")
 #opens the csv file in the working directory and opens and reads it
 with open('my_csvfile.csv', mode='r') as infile:
     reader = csv.reader(infile)
-    #open a new text file called outfile to store the new pyhton dictionary
+    #open a new text file called dictionary.txt to store the new python dictionary
     with open('dictionary.txt', mode='w') as outfile:
         writer = csv.writer(outfile)
-        mydict = {rows[0]:rows[1] for rows in reader} #mydict is the new dictionary
+        mydict = {rows[0]:rows[1] for rows in reader}
         print (mydict, file=outfile)
 
 # another way to print text to a text file
