@@ -1,4 +1,4 @@
-d =	{"brand": "Ford", "model": "Mustang", "year": 1964} # Set the dictionary as a variable
+d = {"brand": "Ford", "model": "Mustang", "year": 1964} # Set the dictionary as a variable
 f1 = open('en_readfile.html', 'r')                   # Opens the read file for read
 f2 = open('en_writefile.html', 'w')                  # Opens the write file
 for line1 in f1:                                     # Searches eachline in read file for the dictionary keys
